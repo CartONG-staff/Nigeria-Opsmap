@@ -134,7 +134,7 @@ protection,group_protection,disabled_madult,Number of male adults with disabilit
 protection,group_protection,partners_prot,Protection partners on site:,PartnerPresenceProtection,,,,yes
 protection,group_protection,other_prot_partner,Other Protection partners on site:,,,,,
 protection,group_protection,comments_protection,"Protection comments (state urgent gaps, needs and recommendations):",,,,,
-shelter_nfi,group_shelternfi,shelter_act,Shelter/ NFI sector activities on site:,,,,"submission.survey_type != ""ad-hoc""",
+shelter_nfi,group_shelternfi,shelter_act,Shelter/ NFI sector activities on site:,,,,"submission.survey_type != ""ad-hoc""",yes
 shelter_nfi,group_shelternfi,other_shelter_act,Specify other Shelter/NFI activities in the site:,,,,,yes
 shelter_nfi,group_shelternfi,sheltertype,Type of shelters in site:,,,,,yes
 shelter_nfi,group_shelternfi,commu_partitioned,Households in communal/ collective shelters (partitioned):,,polar_area_chart#3,communal#HH living in communal shelters,"submission.survey_type != ""ad-hoc""",
