@@ -2,8 +2,6 @@ category_name,category,csv_field,alias,traffic_light,chart,chart_details,relevan
 general_info,,date,Date of Report:,,,,,
 general_info,group_general_info,reporting_week,Reporting Week:,,,,,
 general_info,group_general_info,organisation,Reporting organization:,,,,,
-general_info,,enumerator,Site facilitator name:,,,,,
-general_info,,enumerator_number,Site facilitator phone number:,,,,,
 general_info,group_general_info,state,State:,,,,,
 general_info,group_general_info,lga,LGA:,,,,"submission[""group_general_info/state""] != """"",
 general_info,group_general_info,ward,Ward:,,,,"submission[""group_general_info/lga""] != """"",
@@ -42,7 +40,6 @@ cccm,group_cccm,date_last_coord_meeting,Date of last site coordination meeting:,
 cccm,group_cccm,minute_coord_meeting,Was the minute of coordination meeting shared with the sector?,,,,,
 cccm,group_cccm,cccm_activities,CCCM sector activities in the site:,,,,,yes
 cccm,group_cccm,other_cccm_activities,Specify other CCCM activities in the site:,,,,,
-cccm,group_cccm,comments_cccm,"CCCM comments (state urgent gaps, challenges, needs and recommendations):",,,,,
 livelihood,group_livelihoods,erl_activities,Early recovery and livelihoods sector activities in the site:,,,,,
 livelihood,group_livelihoods,other_erl_activities,Specify other Early recovery and livelihoods activities in the site:,,,,"submission[""group_livelihoods/erl_activities""] ==  ""other""",
 livelihood,group_livelihoods,vocational_activities,Are vocational skills training available at the site?,yesno,,,"submission.survey_type != ""ad-hoc""",
@@ -50,7 +47,6 @@ livelihood,group_livelihoods,MarketInsideCamp,Is there a market inside the site?
 livelihood,group_livelihoods,MarketDistance,How far away is the nearest easily accessible functional market (km)?,,,,"submission[""group_livelihoods/marketinsidecamp""] == ""no""",
 livelihood,group_livelihoods,LivelihoodSources,"What are families"" primary livelihoods sources (select up to 3)?",,,,,yes
 livelihood,group_livelihoods,OtherLivelihoodSources,Other:,,,,,
-livelihood,group_livelihoods,comments_livelihoods,"Livelihoods comments (state urgent gaps, needs and recommendations):",,,,"submission.survey_type != ""ad-hoc""",
 livelihood,group_livelihoods,partners_livelihood,Early Recovery & Livelihoods partners on site:,PartnerPresenceLivelihood,,,,yes
 livelihood,group_livelihoods,other_livelihood_partner,Other Early Recovery & Livelihoods partners on site:,,,,,
 education,group_education,edu_activity,Education sector activities in the site:,,,,,
@@ -63,14 +59,12 @@ education,group_education,NumberChildren,Approximately how many school-aged chil
 education,group_education,ChildrenNoSchool,What are the primary challenges to accessing formal education?,,,,,
 education,group_education,InformalActivities,"Are informal education activities (ie.catch-up, literacy and language classes) available in the site or nearby and accessible to IDPs?",yesno,,,,
 education,group_education,Informaleducation,Approximately how many school-aged children have access to informal education activities?,,,,,
-education,group_education,comments_education,"Education comments (state urgent gaps, needs and recommendations):",,,,"submission.survey_type != ""ad-hoc""",
 education,group_education,partners_ed,Education partners on site:,PartnerPresenceEducation,,,,
 education,group_education,other_education_partner,Other Education partners on site:,,,,,
 food_security,group_fs,number_of_families_that_received_cash_for_food,Number families that received cash for food last month:,,,,,
 food_security,group_fs,number_of_families_that_reived food_in_kind,Number families that received food in kind last month:,,,,,
 food_security,group_fs,number_of_families_that_received_agricultural,"Number of families that received agricultural livelihood assistance (including assistance related to crop production, poultry, livestock, fisheries etc) last month:",,,,"submission.survey_type != ""ad-hoc""",
 food_security,group_fs,number_of_families_that_received_fes,Number of families that received fuel efficient stoves (FES) last month:,,,,"submission.survey_type != ""ad-hoc""",
-food_security,group_fs,comments_fs,"Food security comments (state urgent gaps, needs and recommendations):",,,,"submission.survey_type != ""ad-hoc""",
 food_security,group_fs,partners_fs,Food Security partners on site:,PartnerPresenceFoodSecurity,,,,
 food_security,group_fs,other_fs_partner,Other Food Security partners on site:,,,,,
 health,group_health,health,Health sector activities available:,,,,,yes
@@ -99,7 +93,6 @@ health,group_health,HealthIssues,What health issues have site residents experien
 health,group_health,HealthAccessProblems,What problems did families encounter accessing health care when they needed it in the last 30 days? (list top 3),,,,,
 health,group_health,partners_health,Health partners on site:,PartnerPresenceHealth,,,,
 health,group_health,other_health_partner,Other Health partners on site:,,,,,
-health,group_health,comments_health,"Health comments (state urgent gaps, needs and recommendations):",,,,,
 nutrition,group_nutrition,nutrition,Nutrition activities available:,,,,"submission.survey_type != ""ad-hoc""",yes
 nutrition,group_nutrition,other_nutrition,Specify other Nutrition activities in the site:,,,,,
 nutrition,group_nutrition,malnutrition,Are there evident cases of malnutrition?,yesno,,,,
@@ -107,7 +100,6 @@ nutrition,group_nutrition,MalnutritionVerification,Was the information verified 
 nutrition,group_nutrition,CasesOfManlutrition,Number of cases:,TotalMalnutrition,,,,
 nutrition,group_nutrition,partners_nutrition,Nutrition partners on site:,PartnerPresenceNutrition,,,,
 nutrition,group_nutrition,other_nutrition_partner,Other Nutrition partners on site:,,,,,
-nutrition,group_nutrition,comments_nutrition,"Nutrition comments (state urgent gaps, needs and recommendations):",,,,,
 protection,group_protection,protection,Protection sector activities in the site:,,,,"submission.survey_type != ""ad-hoc""",yes
 protection,group_protection,cp_act,Child Protection activities in the site:,,,,,
 protection,group_protection,other_cp_act,Specify other Child Protection activities in the site:,,,,,
@@ -133,7 +125,6 @@ protection,group_protection,disabled_fadult,Number of female adults with disabil
 protection,group_protection,disabled_madult,Number of male adults with disabilities (PWDs),NumberMaleAdultswithDisability,,,,
 protection,group_protection,partners_prot,Protection partners on site:,PartnerPresenceProtection,,,,yes
 protection,group_protection,other_prot_partner,Other Protection partners on site:,,,,,
-protection,group_protection,comments_protection,"Protection comments (state urgent gaps, needs and recommendations):",,,,,
 shelter_nfi,group_shelternfi,shelter_act,Shelter/ NFI sector activities on site:,,,,"submission.survey_type != ""ad-hoc""",yes
 shelter_nfi,group_shelternfi,other_shelter_act,Specify other Shelter/NFI activities in the site:,,,,,yes
 shelter_nfi,group_shelternfi,sheltertype,Type of shelters in site:,,,,,yes
@@ -158,7 +149,6 @@ shelter_nfi,group_shelternfi,NewHHNFI,Number of New arrival HH in need of NFI:  
 shelter_nfi,group_shelternfi,nfi1,Most needed NFI:,,,,"submission.survey_type != ""ad-hoc""",
 shelter_nfi,group_shelternfi,nfi2,Second needed NFI:,,,,"submission.survey_type != ""ad-hoc""",
 shelter_nfi,group_shelternfi,nfi3,Third needed NFI:,,,,"submission.survey_type != ""ad-hoc""",
-shelter_nfi,group_shelternfi,comments_shelter,"Shelter/ NFI comments (state urgent gaps, needs and recommendations):",,,,"submission.survey_type != ""ad-hoc""",
 shelter_nfi,group_shelternfi,ElectricitySite,Is there electricty on the whole site?,yesno,,,,
 shelter_nfi,group_shelternfi,partners_shelter,Shelter/ NFI partners on site:,PartnerPresenceShelter,,,,yes
 shelter_nfi,group_shelternfi,other_shelter_partner,Other Shelter partners on site:,,,,,
@@ -189,6 +179,5 @@ wash,group_wash,SegregationBath,Number of segregated showers:,,,,,
 wash,group_wash,GenderMarkedBath,Number of gender marked showers:,,,,,
 wash,group_wash,LatrinesLighting,Is there lighting around the latrines at night?,yesno,,,,
 wash,group_wash,BathLighting,Is there lighting around the shower/bathing facilities at night?,yesno,,,,
-wash,group_wash,comments_wash,"WASH comments (state urgent gaps, needs and recommendations):",,,,"submission.survey_type != ""ad-hoc""",
 wash,group_wash,partners_wash,WASH partners on site:,,,,,
 wash,group_wash,other_wash_partner,Other WASH partners on site:,,,,,
